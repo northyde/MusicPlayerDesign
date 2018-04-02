@@ -18,14 +18,17 @@ public class PlayerActivity extends AppCompatActivity {
         setContentView(R.layout.player);
         Intent incoming = getIntent();
 
-        if (incoming==null) return;
+        if (incoming == null) return;
 
+        // Finds views and assigns names
         TextView songTextView = findViewById(R.id.songTextView);
         TextView albumTextView = findViewById(R.id.albumTextView);
         TextView artistTextView = findViewById(R.id.artistTextView);
 
+       // Gets information about the chosen song
         songTextView.setText(incoming.getStringExtra("SongTitle"));
         albumTextView.setText(incoming.getStringExtra("AlbumTitle"));
         artistTextView.setText(incoming.getStringExtra("ArtistName"));
 
-}}
+    }
+}

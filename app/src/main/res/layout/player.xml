@@ -2,26 +2,37 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/background_songs">
 
    <TextView
        android:id="@+id/songTextView"
        android:layout_width="match_parent"
        android:layout_height="0dp"
     android:layout_weight="2"
-       android:text="Song"/>
+       android:text="Song"
+       android:textColor="@color/category_songs"
+       android:gravity="center"
+       android:textStyle="bold"
+       />
     <TextView
        android:id="@+id/albumTextView"
         android:layout_width="match_parent"
        android:layout_height="0dp"
     android:layout_weight="2"
-       android:text="Album"/>
+       android:text="Album"
+        android:textColor="@color/category_albums"
+        android:gravity="center"
+        android:textStyle="bold"/>
     <TextView
       android:id="@+id/artistTextView"
        android:layout_width="match_parent"
        android:layout_height="0dp"
     android:layout_weight="2"
-       android:text="Artist"/>
+       android:text="Artist"
+        android:textColor="@color/category_artists"
+        android:gravity="center"
+        android:textStyle="bold"/>
 
   <LinearLayout
       android:layout_width="match_parent"

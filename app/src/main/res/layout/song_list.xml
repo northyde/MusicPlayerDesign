@@ -8,4 +8,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/background_songs"
+    android:divider="@drawable/divider"
+    android:cacheColorHint="@android:color/black"
+    android:dividerHeight="1pt"
     />

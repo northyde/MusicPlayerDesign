@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="category_songs">#4A148C</color>
+    <color name="background_songs">#E1BEE7</color>
     <color name="category_albums">#311B92</color>
     <color name="category_artists">#8800A0</color>
     <color name="category_player">#880E4F</color>

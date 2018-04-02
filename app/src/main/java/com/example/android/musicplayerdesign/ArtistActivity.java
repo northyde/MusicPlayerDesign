@@ -25,8 +25,9 @@ public class ArtistActivity extends AppCompatActivity {
         // Fills the Song ArrayList with items
 
         ArrayList<Song> songs = new ArrayList<Song>();
-        songs.add(new Song("Artist A", "3 Albums", "15 songs"));
-        songs.add(new Song("Artist B", "2 Albums", "10 songs"));
+        songs.add(new Song("Artist A", "3 Albums", "15 Songs"));
+        songs.add(new Song("Artist B", "2 Albums", "10 Songs"));
+        songs.add(new Song("Artist C", "1 Album", "5 Songs"));
 
 
         SongAdapter adapter = new SongAdapter(this, songs);
@@ -35,7 +36,7 @@ public class ArtistActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
 
 
-        //make an item in a list clickable
+        // Makes an item in a list clickable
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
@@ -43,6 +44,8 @@ public class ArtistActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Song currentSong = (Song) listView.getItemAtPosition(position);
                 Intent playerIntent = new Intent(ArtistActivity.this, PlayerActivity.class);
+
+                // Passes information to the player
                 playerIntent.putExtra("SongTitle", currentSong.getSongTitle());
                 playerIntent.putExtra("AlbumTitle", currentSong.getAlbumTitle());
                 playerIntent.putExtra("ArtistName", currentSong.getArtistName());

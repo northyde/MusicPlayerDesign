@@ -50,6 +50,11 @@ public class SongActivity extends AppCompatActivity {
         songs.add(new Song("Artist B", "Cold", "BCold3"));
         songs.add(new Song("Artist B", "Cold", "BCold4"));
         songs.add(new Song("Artist B", "Cold", "BCold5"));
+        songs.add(new Song("Artist C", "Sun", "CSun1"));
+        songs.add(new Song("Artist C", "Sun", "CSun2"));
+        songs.add(new Song("Artist C", "Sun", "CSun3"));
+        songs.add(new Song("Artist C", "Sun", "CSun4"));
+        songs.add(new Song("Artist C", "Sun", "CSun5"));
 
         SongAdapter adapter = new SongAdapter(this, songs);
 
@@ -57,7 +62,7 @@ public class SongActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
 
 
-        //make an item in a list clickable
+        // Makes an item in a list clickable
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
@@ -65,6 +70,8 @@ public class SongActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Song currentSong = (Song) listView.getItemAtPosition(position);
                 Intent playerIntent = new Intent(SongActivity.this, PlayerActivity.class);
+
+                // Passes information to the player
                 playerIntent.putExtra("SongTitle", currentSong.getSongTitle());
                 playerIntent.putExtra("AlbumTitle", currentSong.getAlbumTitle());
                 playerIntent.putExtra("ArtistName", currentSong.getArtistName());

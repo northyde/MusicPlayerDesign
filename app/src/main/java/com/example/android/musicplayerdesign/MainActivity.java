@@ -19,10 +19,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Finds views and assigns names
+        TextView songsTextView = (TextView) findViewById(R.id.songs);
+        TextView albumsTextView = (TextView) findViewById(R.id.albums);
+        TextView artistsTextView = (TextView) findViewById(R.id.artists);
+        TextView playerTextView = (TextView) findViewById(R.id.player);
 
         // Sets OnClickListeners to the views in the Main activity
 
-        TextView songsTextView = (TextView) findViewById(R.id.songs);
         songsTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -31,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        TextView albumsTextView = (TextView) findViewById(R.id.albums);
         albumsTextView.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers View is clicked on.
             @Override
@@ -41,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        TextView artistsTextView = (TextView) findViewById(R.id.artists);
         artistsTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -50,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        TextView playerTextView = (TextView) findViewById(R.id.player);
         playerTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -58,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(playerIntent);
             }
         });
-
 
     }
 }

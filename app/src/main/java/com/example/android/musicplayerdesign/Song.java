@@ -9,31 +9,37 @@ public class Song {
     String mAlbumTitle;
     String mSongTitle;
 
-//Constructor
-    public Song (String artist,String album,String song){
-    mArtistName = artist;
-    mAlbumTitle = album;
-    mSongTitle = song;
-}
+    //Constructor
+    public Song(String artist, String album, String song) {
+        mArtistName = artist;
+        mAlbumTitle = album;
+        mSongTitle = song;
+    }
 
-// get methods
-    public String getArtistName ()
-    {return mArtistName;}
+    // get methods
+    public String getArtistName() {
+        return mArtistName;
+    }
 
-    public String getAlbumTitle ()
-    {return mAlbumTitle;}
+    // set methods
+    public void setArtistName(String artistName) {
+        mArtistName = artistName;
+    }
 
-    public String getSongTitle ()
-    {return mSongTitle;}
+    public String getAlbumTitle() {
+        return mAlbumTitle;
+    }
 
-// set methods
-    public void setArtistName (String artistName){
-        mArtistName = artistName;}
+    public void setAlbumTitle(String albumTitle) {
+        mAlbumTitle = albumTitle;
+    }
 
-        public void setAlbumTitle(String albumTitle){
-        mAlbumTitle = albumTitle;}
+    public String getSongTitle() {
+        return mSongTitle;
+    }
 
-        public void setSongTitle (String songTitle){
-            mSongTitle = songTitle; }
+    public void setSongTitle(String songTitle) {
+        mSongTitle = songTitle;
+    }
 
 }
