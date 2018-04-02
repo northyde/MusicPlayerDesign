@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Music Player Design</string>
+    <string name="category_songs">Songs</string>
+    <string name="category_albums">Albums</string>
+    <string name="category_artists">Artists</string>
+    <string name="category_player">Player</string>
+</resources>
