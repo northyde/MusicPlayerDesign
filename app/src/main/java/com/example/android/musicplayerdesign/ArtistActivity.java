@@ -19,25 +19,20 @@ public class ArtistActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.song_list);
 
         // Fills the Song ArrayList with items
-
         ArrayList<Song> songs = new ArrayList<Song>();
         songs.add(new Song("Artist A", "3 Albums", "15 Songs"));
         songs.add(new Song("Artist B", "2 Albums", "10 Songs"));
         songs.add(new Song("Artist C", "1 Album", "5 Songs"));
-
 
         SongAdapter adapter = new SongAdapter(this, songs);
 
         final ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);
 
-
         // Makes an item in a list clickable
-
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
@@ -54,5 +49,3 @@ public class ArtistActivity extends AppCompatActivity {
         });
     }
 }
-
-

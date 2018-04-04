@@ -19,11 +19,9 @@ public class AlbumActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.song_list);
 
         // Fills the Song ArrayList with items
-
         ArrayList<Song> songs = new ArrayList<Song>();
         songs.add(new Song("Artist A", "Blue", "5 Songs"));
         songs.add(new Song("Artist A", "Yellow", "5 Songs"));
@@ -31,7 +29,6 @@ public class AlbumActivity extends AppCompatActivity {
         songs.add(new Song("Artist B", "Hot", "5 Songs"));
         songs.add(new Song("Artist B", "Cold", "5 Songs"));
         songs.add(new Song("Artist C", "Sun", "5 Songs"));
-
 
         SongAdapter adapter = new SongAdapter(this, songs);
 

@@ -20,26 +20,21 @@ public class Song {
     public String getArtistName() {
         return mArtistName;
     }
-
-    // set methods
-    public void setArtistName(String artistName) {
-        mArtistName = artistName;
-    }
-
     public String getAlbumTitle() {
         return mAlbumTitle;
     }
-
-    public void setAlbumTitle(String albumTitle) {
-        mAlbumTitle = albumTitle;
-    }
-
     public String getSongTitle() {
         return mSongTitle;
     }
 
-    public void setSongTitle(String songTitle) {
+    // set methods
+    private void setArtistName(String artistName) {
+        mArtistName = artistName;
+    }
+    private void setAlbumTitle(String albumTitle) {
+        mAlbumTitle = albumTitle;
+    }
+    private void setSongTitle(String songTitle) {
         mSongTitle = songTitle;
     }
-
 }
